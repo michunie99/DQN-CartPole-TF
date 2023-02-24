@@ -10,9 +10,11 @@ The inplemented DQN is a dual DQN. The agent has two neural networks for predict
 
 https://user-images.githubusercontent.com/81962102/221127479-86a62383-ceca-4b51-ae50-9fc8b9bbec3d.mp4
 
+## Learning results
 
 I have conducted some experimets editing the hyper parameters and observing agent performance:
-Update - how often the second DQN is updated
+
+**Update - how often the second DQN is updated**
 
 * Update - 10, epochs - 300
 ![checkpoints_update_10_epochs_300](https://user-images.githubusercontent.com/81962102/221135516-1e6552bd-82bf-4ad0-9445-bed074d68368.png)
@@ -22,3 +24,6 @@ Update - how often the second DQN is updated
 
 * Update - 1000, epochs - 600
 ![checkpoints_updata1000_episode_600_batchsize_128](https://user-images.githubusercontent.com/81962102/221135953-aa16c786-b121-4848-8681-f32a0b079fee.png)
+
+
+The best performance was achived for the update of 10. The values of 100 and 1000 were to big and the newtork didn't learn corret behavior to stabilize the pole.
